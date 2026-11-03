@@ -122,7 +122,7 @@ public final class BasketballPong {
 
         private double currentSpeed() {
             long elapsedSeconds = (System.currentTimeMillis() - matchStartedAt) / 1000;
-            return BASE_SPEED + (elapsedSeconds / 10) * 1.0;
+            return BASE_SPEED + (elapsedSeconds) * 1.0;
         }
 
         private void updateGame(ActionEvent event) {
